@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   /*tells the browser to account for any border and padding in the values you specify for an element's width and height*/
+}
+
+body {
+    min-height: 100vh;  /* 100% viewport height(vh)    vw => viewport width */
+    background: #efeff2;
+
+    /* Getting our calculator at center of screen */
+    display: flex;
+    justify-content: center;  /* align the flex items on main axis horizontal in our case */
+    align-items: center;      /* align the flex items on cross axis vertical in our case */
+}
+
+.calculator {
+    width: 300px;
+    height: 500px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    background-color: #2A2D37;
+    overflow: hidden;         /* parts of elements which are going outside of our calculator will be hidden */
+}
+
+form input {
+    width: 100%;
+    height: 150px;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    background-color: #22252D;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: right;       /* to show text from right side */
+    pointer-events: none;
+}
+
+.buttons {
+    display: flex;     /* arrange all the flex items acc. to main axis */
+    flex-wrap: wrap;   /* wrap the flex items inside our div */
+    justify-content: space-between;  /* divide the items evenly */
+    padding: 20px;
+}
+
+button {
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: none;
+    background-color: #282B33;
+    width: 60px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-yellow {
+    color: #4EBEAF;
+}
+
+.btn-grey {
+    color: #DFE0E3;
+}
+
+.btn-equal {
+    color: #7F3F42;
+}
+
+.btn-clear {
+    color: #7F3F42;
+}
